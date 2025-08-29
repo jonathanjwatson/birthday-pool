@@ -1,0 +1,43 @@
+{
+  "name": "birthday-pool",
+  "priviate": "true",
+  "workspaces": [
+    "web-client",
+    "api"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.25.9",
+    "fdir": "^6.5.0",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.3",
+    "postcss": "^8.5.6",
+    "rollup": "^4.49.0",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.14",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --workspace=web-client\" \"npm run dev --workspace=api\"",
+    "build": "npm run build --workspace=web-client && npm run build --workspace=api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanjwatson/birthday-pool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathanjwatson/birthday-pool/issues"
+  },
+  "homepage": "https://github.com/jonathanjwatson/birthday-pool#readme"
+}
